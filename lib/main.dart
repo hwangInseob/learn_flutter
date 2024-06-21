@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:real_study/route.dart';
+import 'package:real_study/screen/main_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,13 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "Learn-Flutter",
-      home: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text("Skeleton"),
-          ),
-        ),
-      ),
+      initialRoute: MainPage.routeName,
+      getPages: routes,
     );
   }
 }
