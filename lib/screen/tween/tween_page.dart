@@ -14,8 +14,6 @@ class TweenPage extends GetView<TweenPageController> {
   // TODO: implement controller
   TweenPageController get controller => Get.put(TweenPageController());
 
-  CommonController get commonController => Get.find();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,18 +29,18 @@ class TweenPage extends GetView<TweenPageController> {
               },
               child: Text("Text Size UP!"),
             ),
-            // Obx(
-            //   () => AnimatedDefaultTextStyle(
-            //     style: TextStyle(
-            //       fontSize: controller.fontSize.value,
-            //       color: Colors.black,
-            //     ),
-            //     duration: Duration(milliseconds: 1000),
-            //     child: Text(
-            //       'Tween',
-            //     ),
-            //   ),
-            // ),
+            Obx(
+              () => AnimatedDefaultTextStyle(
+                style: TextStyle(
+                  fontSize: controller.fontSize.value,
+                  color: Colors.black,
+                ),
+                duration: Duration(milliseconds: 1000),
+                child: Text(
+                  'Tween',
+                ),
+              ),
+            ),
             Text(
               'Tween',
               style: TextStyle(
