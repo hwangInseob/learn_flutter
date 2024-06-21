@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:real_study/screen/getx/getx_main_page.dart';
 import 'package:real_study/screen/list_generate/list_generate_page.dart';
 import 'package:real_study/screen/tween/tween_page.dart';
 
@@ -58,8 +59,16 @@ class MainPageController extends GetxController {
 
   final itemList = [
     new StudyPageItem(
+      routeName: GetxMainPage.routeName,
+      title: GetxMainPage.routeTitle,
+    ),
+    new StudyPageItem(
       routeName: ListGeneratePage.routeName,
       title: ListGeneratePage.routeTitle,
+    ),
+    new StudyPageItem(
+      routeName: TweenPage.routeName,
+      title: TweenPage.routeTitle,
     ),
   ];
 

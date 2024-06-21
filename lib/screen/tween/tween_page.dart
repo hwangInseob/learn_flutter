@@ -73,6 +73,6 @@ class TweenPageController extends GetxController
         CurvedAnimation(parent: animationController!, curve: Curves.bounceIn);
 
     animationFontSize = Tween(begin: 16.0, end: 32.0).animate(curve);
-    animationController!.repeat();
+    // animationController!.repeat();
   }
 }
