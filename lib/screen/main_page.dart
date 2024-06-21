@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:real_study/screen/list_generate/list_generate_page.dart';
+import 'package:real_study/screen/tween/tween_page.dart';
 
 class MainPage extends GetView<MainPageController> {
   static const routeName = "/main";
